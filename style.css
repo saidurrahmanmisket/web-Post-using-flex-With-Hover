@@ -10,13 +10,18 @@
     height: 600px;
     width: 600px;
     position: relative;
+    overflow: hidden;
+    float: left;
 
 }
 .img{
     height: 80%;
     width: 100%;
     overflow: hidden;
-    object-fit: fill;
+    background-size: cover ;
+    position: absolute;
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
 
 
 }
@@ -25,27 +30,29 @@
     width: 100%;
     opacity: .3;
     position: absolute;
-    left: 0;
-
+    top: -600px;
     background-color: rgb(0, 0, 0);
     color: red;
     transition: 1s;
-
+    visibility: ;
+    
 
 
 }
 
-.box :hover.text{
+.box:hover .text{
     color: white;
     background-color: black;
+    visibility: visible;
     top: 0;
-
     
 
     
 }
 .heading{
+    top: 80%;
     height: 20%;
     color: red;
     display: block;
+    position: absolute;
 }
